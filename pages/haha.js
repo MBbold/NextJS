@@ -1,15 +1,15 @@
 import { useRouter } from "next/router"
 
-const haha = () => {
-    const route = useRouter()
+const Haha = () => {
+    const router = useRouter()
     return (
         <>
             <div>haha</div>
             <button onClick={() => {
-                route.push("/")
+                router.push("/")
             }}>go to home</button>
         </>
     )
 }
 
-export default haha
+export default Haha
