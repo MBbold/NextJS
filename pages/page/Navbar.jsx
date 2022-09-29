@@ -36,8 +36,7 @@ export const Navbar = () => {
   useEffect(()=>{
     changeEventListener();
   },[]);
-  window.addEventListener('scroll', changeEventListener);
-
+  // window.addEventListener('scroll', changeEventListener)
   return (
     <AppBar position="fixed" elevation={0} sx={{ top:0, backgroundColor: isScroll ? 'transparent' : '#000'}}>
       <Container maxWidth="xl">
