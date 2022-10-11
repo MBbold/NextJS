@@ -2,6 +2,7 @@ import { Box } from '@mui/system'
 import { useRouter } from 'next/router'
 import { BlogPosts } from './page/BlogPosts'
 import { ContainerHome } from './page/ContainerHome'
+import { Footer } from './page/Footer'
 import { Navbar } from './page/Navbar'
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
         <Navbar />
         <ContainerHome/>
         <BlogPosts/>
+        <Footer/>
     </Box>
     </>
   )
