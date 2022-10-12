@@ -1,6 +1,6 @@
 import _ from "lodash";
 import { East } from "@mui/icons-material";
-import { footerArray, networks } from "../Data/usefullArr";
+import { footerArray, networksArray } from "../Data/usefullArr";
 import {
   Box,
   Grid,
@@ -29,7 +29,7 @@ export const Footer = () => {
               .
             </Typography>
           </Stack>
-          {_.map(Object.entries(networks), ([netName, NetIcon]) => (
+          {/* {_.map(Object.entries(networksArray), ([netName, NetIcon]) => (
             <Typography
               sx={{
                 display: "flex",
@@ -44,7 +44,7 @@ export const Footer = () => {
               <NetIcon style={{ marginRight: "5px" }} />
               {`${netName}`}
             </Typography>
-          ))}
+          ))} */}
         </Grid>
         {_.map(Object.entries(footerArray), ([name, item]) => (
           <Grid item key={name} sx={{ textTransform: "capitalize" }}>
