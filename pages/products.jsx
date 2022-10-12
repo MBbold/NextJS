@@ -1,10 +1,13 @@
 import { Button, Input, Stack, TextField, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import Image from "next/image";
-import image from "../backgroundImage.jpg";
-import { PostData } from "../Data/PostData";
+import { useRouter } from "next/router";
+import image from "./backgroundImage.jpg";
+import { PostData } from "./Data/PostData";
 
 export const ContainerHome = () => {
+  const router = useRouter()
+
   return (
     <Box sx={{ width: "100vw", backgroundColor: "#fff", position: "relative" }}>
       <Box

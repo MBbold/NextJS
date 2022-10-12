@@ -11,6 +11,7 @@ import { Logo } from "../icons/logo";
 import  _  from 'lodash';
 import { useEffect, useState } from "react";
 import { Box } from "@mui/system";
+import Link from "next/link";
 
 export const Navbar = () => {
 
@@ -50,7 +51,10 @@ export const Navbar = () => {
           <Stack direction={"row"} spacing={2}>
             <Tabs value={value} onChange={handleChange}>
               {_.map(buttons, (buttonEl, index)=>(
-                <Tab key={index} label={buttonEl.title} sx={{color:'#fff', fontSize:14}}/>
+                <Link href={`/${buttonEl.href}`} key={index}> 
+                  <Tab key={index} label={buttonEl.title} sx={{color:'#fff', fontSize:14}}/>
+                </Link>
+
               ))}
             </Tabs>
             <Button variant="" sx={{ color: '#fff' }}>Get Access</Button>
